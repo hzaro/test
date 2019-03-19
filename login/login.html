@@ -1,0 +1,24 @@
+<div style="background-color: #F4F2F2;">
+    <div fxLayout="row" fxLayoutAlign="center center" style="height: 80vh;">
+        <div style="margin: 20px; width: 400px;">
+            <mat-card>
+                <div fxLayout="row" fxLayoutAlign="center center" style="margin-top: 20px">
+                    <img src="../../../assets/logo.png" style="max-width: 200px" alt="">
+                </div>
+                <mat-card-content>
+                    <div fxLayout="column" style="padding-top: 50px; padding-bottom:50px" fxLayoutAlign="center center">
+                        <mat-form-field style="width: 90%">
+                            <input [(ngModel)]="user.email" matInput placeholder="Email">
+                        </mat-form-field>
+                        <mat-form-field style="width: 90%">
+                            <input type="password" [(ngModel)]="user.password" matInput placeholder="Contraseña">
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayoutAlign="center center" style="margin-bottom: 20px">
+                        <button (click)="login()" mat-button>INGRESAR</button>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
